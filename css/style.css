@@ -385,5 +385,5 @@ ul, li {
 
 .footer i::before {
     padding-right: 10px;
-    color: var(--color-base3);
+    color: var(--color-body);
 }
