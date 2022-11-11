@@ -12,11 +12,14 @@
 
 /*  Generals */
 body {
-    background-color: var(--color-base);
+    background-color: var(--color-base3);
     color: var(--color-body);
     font-family: var(--font-body), sans-serif;
     font-family: var(--font-heading), serif;
-    padding-bottom: 30px;
+}
+
+footer {
+    padding: 20px 0;
 }
 
 h1,
@@ -25,7 +28,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: var(--color-base3);
+    color: var(--color-base);
     font-weight: 700;
 }
 
@@ -55,7 +58,7 @@ ul, li {
 .link-custom {
     font-weight: 700;
     position: relative;
-    color: var(--color-base3);
+    color: var(--color-base);
     font-size: 12px;
 }
 
@@ -63,7 +66,7 @@ ul, li {
     content: "";
     width: 0%;
     height: 2px;
-    background-color: var(--color-heading);
+    background-color: var(--color-base);
     position: absolute;
     left: 0;
     top: 110%;
@@ -76,13 +79,13 @@ ul, li {
 
 /* Navbar */
 .navbar {
-    background: linear-gradient(var(--color-base), var(--color-base)), url();
+    background: linear-gradient(var(--color-base3), var(--color-base3)), url();
 }
 
 .navbar .nav-link {
     font-weight: 900px;
     text-transform: uppercase;
-    color: var(--color-base3);
+    color: var(--color-base);
     font-family: var(--font-heading);
 }
 
@@ -94,7 +97,7 @@ ul, li {
     .navbar {
         min-height: 100vh;
         width: 240px;
-        background: linear-gradient(var(--color-base), var(--color-base)), url();
+        background: linear-gradient(var(--color-base3), var(--color-base3)), url();
         margin-bottom: 20px;
     }
 
@@ -108,7 +111,7 @@ ul, li {
 #home {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(235, 170, 66, 0.9), rgba(235, 170, 66, 0.9)), url("../img/Rectangle-4.svg");
+    background: linear-gradient(rgba(19, 13, 51, 0.905), rgba(19, 13, 51, 0.909)), url("../img/Rectangle-4.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -128,7 +131,7 @@ ul, li {
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
-    color: var(--color-base3);
+    color: var(--color-base);
     font-family: var(--font-heading);
 }
 
@@ -158,7 +161,7 @@ ul, li {
 }
 
 #home .social-links a:hover {
-    color: var(--color-base3);
+    color: var(--color-base);
 }
 
 @media (max-width: 992px) {
@@ -208,11 +211,19 @@ ul, li {
 
 .about-list i {
     padding-right: 10px;
-    color: var(--color-base3);
+    color: var(--color-base);
 }
 
 .about-list a {
     color: var(--color-body);
+}
+
+.about-skill {
+    padding: 20px 0;
+}
+
+.about-skill i::before {
+    font-size: 40px;
 }
 
 /*  Services */
@@ -220,7 +231,7 @@ ul, li {
     text-align: center;
     padding: 20px 20px 20px 20px;
     transition: all ease-in-out 0.3s;
-    background: rgba(255, 229, 180, 0.364);
+    background: rgba(46, 36, 106, 0.411);
     box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.05);
     border-radius: 20px;
 }
@@ -269,7 +280,12 @@ ul, li {
 }
 
 .services .icon-box h4 a {
-    color: var(--color-base3);
+    color: var(--color-base);
+    transition: ease-in-out 0.5s;
+}
+
+.services .icon-box .link-custom {
+    color: var(--color-base);
     transition: ease-in-out 0.5s;
 }
 
@@ -352,3 +368,22 @@ ul, li {
 }
 
 /*  Services End */
+
+/*  Footer  */
+@media (min-width: 992px) {
+    #footer {
+        padding-left: 240px;
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.footer{
+    padding: 20px 20px;
+}
+
+.footer i::before {
+    padding-right: 10px;
+    color: var(--color-base3);
+}
